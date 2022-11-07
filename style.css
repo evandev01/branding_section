@@ -58,3 +58,9 @@ body {
 .iconDiv img {
 	height: 60px;
 }
+
+.carousel {
+	width: 700px;
+	max-width: 100%;
+	height: auto;
+}
