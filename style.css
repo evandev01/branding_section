@@ -10,8 +10,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-basis: 90%;
-	width: 60%;
+	flex-basis: 100%;
+	width: 80%;
 	margin-top: 1rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -25,25 +25,36 @@ body {
 }
 
 .mainImage {
-	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 40%;
 }
 
 .mainImage img {
-	width: 500px;
+	width: 700px;
 	max-width: 100%;
 	height: auto;
+	padding: 1rem;
 }
 
 .mainText {
-	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	flex-basis: 40%;
+	padding: 1rem;
 }
 
-.mainText h1 {
+.mainText h2 {
 	color: #04723d;
+	line-height: 1.5em;
 }
 
 .iconRow {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
 }
@@ -51,8 +62,14 @@ body {
 .iconDiv {
 	display: flex;
 	flex-direction: column;
+	flex-basis: 25%;
+	flex-wrap: wrap;
 	align-items: center;
-	padding: 20px;
+	padding: 10px;
+}
+
+.iconDiv p {
+	text-align: center;
 }
 
 .iconDiv img {
@@ -63,4 +80,35 @@ body {
 	width: 700px;
 	max-width: 100%;
 	height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.mainContent {
+		width: 90%;
+	}
+	.mainImage,
+	.mainText {
+		flex-basis: 45%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.mainContent {
+		flex-basis: 90%;
+		width: 90%;
+	}
+	.mainImage,
+	.mainText {
+		flex-basis: 100%;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.iconRow {
+		margin-top: 0.5rem;
+	}
+	.iconDiv {
+		flex-basis: 50% !important;
+	}
 }
