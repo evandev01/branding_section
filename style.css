@@ -11,10 +11,11 @@ body {
 	flex-direction: column;
 	align-items: center;
 	flex-basis: 100%;
-	width: 80%;
-	margin-top: 1rem;
+	width: 90%;
+	margin-top: 2rem;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 2rem;
 }
 
 .topSection {
@@ -28,11 +29,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	flex-basis: 40%;
+	flex-basis: 50%;
 }
 
 .mainImage img {
-	width: 700px;
+	width: 800px;
 	max-width: 100%;
 	height: auto;
 	padding: 1rem;
@@ -43,7 +44,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	flex-basis: 40%;
+	flex-basis: 50%;
 	padding: 1rem;
 }
 
@@ -88,7 +89,8 @@ body {
 	}
 	.mainImage,
 	.mainText {
-		flex-basis: 45%;
+		flex-basis: 100%;
+		align-items: center;
 	}
 }
 
@@ -96,11 +98,6 @@ body {
 	.mainContent {
 		flex-basis: 90%;
 		width: 90%;
-	}
-	.mainImage,
-	.mainText {
-		flex-basis: 100%;
-		align-items: center;
 	}
 }
 
