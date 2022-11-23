@@ -2,7 +2,7 @@ body {
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: 'PT Sans', sans-serif;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
 	color: rgba(0, 0, 0, 0.8);
 }
 
@@ -49,8 +49,17 @@ body {
 }
 
 .mainText h2 {
-	color: #04723d;
+	color: #27ae60;
 	line-height: 1.5em;
+}
+
+.learnMoreBtn {
+	background-color: #27ae60;
+	font-size: large;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 0.5rem;
 }
 
 .iconRow {
