@@ -18,21 +18,29 @@ body {
 	margin-bottom: 4rem;
 }
 
-.topSection {
+.topRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.mainImage {
+.bottomRow {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.mainImageDiv {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	flex-basis: 50%;
 }
 
-.mainImage img {
+.mainImageDiv img {
+	display: flex;
+	flex-basis: 50%;
 	width: 700px;
 	max-width: 100%;
 	height: auto;
@@ -64,15 +72,16 @@ body {
 
 .iconRow {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	margin-top: 2rem;
+	flex-basis: 50%;
 }
 
 .iconDiv {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 25%;
+	flex-basis: 33.333%;
 	flex-wrap: wrap;
 	align-items: center;
 	padding: 10px;
@@ -80,52 +89,45 @@ body {
 
 .iconDiv p {
 	text-align: center;
+	font-size: small;
 }
 
 .iconDiv img {
-	height: 180px;
+	height: 150px;
+}
+
+.carouselDiv {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
 }
 
 .carousel {
-	width: 700px;
+	width: 600px;
 	max-width: 100%;
 	height: 100%;
 }
 
-.carousel-control-next {
-	right: -50 !important;
-	bottom: 50 !important;
-	top: 50 !important;
+.carousel-item {
+	height: 300px;
 }
-.carousel-control-prev {
-	left: -50 !important;
-	bottom: 50 !important;
-	top: 50 !important;
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-size: 200% 200% !important;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-	position: absolute;
-	/* top: 0;
-	bottom: 0; */
-	z-index: 1;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start !important;
-	background: 0 0;
-	color: #fff;
-	text-align: center;
-	background: 0 0;
-	border: 0;
-	opacity: 0.5;
-	transition: opacity 0.15s ease;
+	top: -150 !important;
+	bottom: 50 !important;
 }
 
 @media screen and (max-width: 1200px) {
 	.mainContent {
 		width: 90%;
 	}
-	.mainImage,
+	.mainImageDiv,
 	.mainText {
 		flex-basis: 100%;
 		align-items: center;
@@ -137,13 +139,34 @@ body {
 		flex-basis: 90%;
 		width: 90%;
 	}
+	.carouselDiv {
+		flex-basis: 90%;
+	}
+	.carousel {
+		width: 500px;
+	}
+	.carousel-item {
+		height: 150px;
+	}
+	.carousel-item p {
+		font-size: smaller;
+	}
+	.iconRow {
+		flex-basis: 90%;
+	}
+	.iconDiv img {
+		height: 120px;
+	}
+	.iconDiv {
+		flex-basis: 33.333%;
+	}
 }
 
 @media screen and (max-width: 768px) {
-	.iconRow {
-		margin-top: 0.5rem;
+	.carousel {
+		width: 400px;
 	}
-	.iconDiv {
-		flex-basis: 50% !important;
+	.iconRow {
+		flex-direction: column;
 	}
 }
