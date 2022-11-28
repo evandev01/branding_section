@@ -151,6 +151,11 @@ body {
 	.carousel-item p {
 		font-size: smaller;
 	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		top: -50 !important;
+		bottom: 50 !important;
+	}
 	.iconRow {
 		flex-basis: 90%;
 	}
