@@ -1,0 +1,54 @@
+.carousel {
+  position: relative;
+  width: 60%;
+  margin-bottom: 8rem;
+  overflow-x: hidden;
+  margin: auto;
+  flex: 0 0 50%;
+}
+
+.slides-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  margin: auto;
+  padding: 1rem 0;
+  width: 80%;
+}
+.content h3 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.carousel-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  top: 50;
+  transform: translateY(50%);
+  margin: 1.5rem;
+  color: #04723d;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.1s;
+  z-index: 1;
+}
+.carousel-button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button-next {
+  right: 0;
+}
+.carousel-button-prev {
+  left: 0;
+}
+
+.slide {
+  flex: 0 0 100%;
+}

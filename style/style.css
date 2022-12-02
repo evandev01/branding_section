@@ -1,0 +1,174 @@
+body {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
+  width: 90%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainImageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.mainImageDiv img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding: 1rem;
+}
+
+.mainText h2 {
+  color: #04723d;
+  line-height: 1.5em;
+}
+
+.learnMoreBtn {
+  background-color: #04723d;
+  font-size: large;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.iconRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-basis: 50%;
+}
+
+.iconDiv {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.333%;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.iconDiv p {
+  text-align: center;
+  font-size: small;
+}
+
+.iconDiv img {
+  height: 150px;
+}
+
+/* .carouselDiv {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+} */
+/* 
+.carousel {
+  width: 600px;
+  height: 300px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  height: 200px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-size: 200% 200% !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: -50 !important;
+  bottom: 50 !important;
+} */
+
+@media screen and (max-width: 1200px) {
+  .mainContent {
+    width: 90%;
+  }
+  .mainImageDiv,
+  .mainText {
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .iconRow {
+    flex-basis: 90%;
+  }
+  .iconDiv img {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainContent {
+    flex-basis: 90%;
+    width: 90%;
+  }
+  /* .carouselDiv {
+    flex-basis: 90%;
+  }
+  .carousel {
+    width: 500px;
+  }
+  .carousel-item {
+    height: 150px;
+  }
+  .carousel-item p {
+    font-size: smaller;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -50 !important;
+    bottom: 50 !important;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  /* .carousel {
+    width: 400px;
+  } */
+  .iconRow {
+    flex-direction: column;
+  }
+}

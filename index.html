@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/slider.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
   <title>Branding Section</title>
@@ -47,80 +48,55 @@
         </div>
       </div>
 
-
       <div class="bottomRow">
-        <div class="carouselDiv">
-          <!-- CAROUSEL -->
-          <div id="carouselExampleControls" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <p>"Your products have given me the best health I haven't felt in quite some time. Thank you so much."
-                  </p>
-                  <p>- Cindy F, Florida</p>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <div>
-                    <p>"Your products make me feel like dancing!"</p>
-                    <p>- Bonnie G, Pennsylvania</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <p>"It's always easy to order from Botanic Choice. Good job!"</p>
-                  <p>- Lawrence S, Virginia</p>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <p>"Your products are the only ones that keep me well. I will always order from your company."</p>
-                  <p>- Louise D, New York</p>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <p>"My energy and get up and go. No problem. I am glad I take vitamins from you."</p>
-                  <p>- Jane L, Georgia</p>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <p>"I like Botanic Choice because I can find hard-to-find products. Service is more speedy than others
-                    and
-                    prices are good. You also stand behind your products. Keep up the good work."</p>
-                  <p>- Judy L, North Carolina</p>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-bs-interval="3000">
-                <div class="d-block w-50 h-100 mx-auto my-auto">
-                  <p>"Your company is easy to deal with. No fussing or messing around. Keep up the good work!"</p>
-                  <p>- Ernest W, Pennsylvania</p>
-                </div>
-              </div>
+<!-- SLIDER -->
+      <div class="carousel">
+        <div class="carousel-buttons">
+          <button 
+          class="carousel-button carousel-button-prev" 
+            data-prev-btn>
+            <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
+          </button>
+          <button 
+          class="carousel-button carousel-button-next" 
+          data-next-btn>
+          <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
+        </button>
+      </div>
+      
+        <div 
+        class="slides-container"
+        data-slides-container
+        >
+          <div class="slide">
+            <div class="content">
+              <h3>"1 Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit."</h3>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-          <!-- END CAROUSEL -->
+          <div class="slide">
+            <div class="content">
+              <h3>"2 Lorem ipsum dolor sit amet, consectetur adipiscing elit."</h3>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content">
+              <h3>"3 Lorem ipsum dolor sit amet, consectetur adipiscing elit."</h3>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content">
+              <h3>"4 Lorem ipsum dolor sit amet, consectetur adipiscing elit."</h3>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content">
+              <h3>"5 Lorem ipsum dolor sit amet, consectetur adipiscing elit."</h3>
+            </div>
+          </div>
+          
         </div>
-
+    </div>
+    <!-- END SLIDER -->
         <div class="iconRow">
           <div class="iconDiv">
             <div>
@@ -162,9 +138,12 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>  
+    
+  </div>
+  </div>
   </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
