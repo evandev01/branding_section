@@ -70,7 +70,7 @@ main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  flex-basis: 45%;
+  flex-basis: 50%;
 }
 
 .iconDiv {
@@ -137,10 +137,10 @@ main {
 }
 
 .carousel-button-next {
-  right: 0;
+  right: 10%;
 }
 .carousel-button-prev {
-  left: 0;
+  left: 10%;
 }
 
 .slide {
